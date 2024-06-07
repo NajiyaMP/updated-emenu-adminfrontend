@@ -305,4 +305,7 @@ body{
 
 }
 
-
+.input-style{
+  padding: 9px;
+  border: 1px solid #d4d1d1;
+}

@@ -183,8 +183,8 @@ function Categories() {
                     <Modal.Title>Add Category</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <input type="text" placeholder="Category Name" style={{ width: '100%' }} onChange={(e) => setCategories(e.target.value)} />
-                    <select onChange={(e) => setMaincategory(e.target.value)} style={{ width: '100%', marginTop: '10px' }}>
+                    <input className='input-style' type="text" placeholder="Category Name" style={{ width: '100%' }} onChange={(e) => setCategories(e.target.value)} />
+                    <select className='input-style' onChange={(e) => setMaincategory(e.target.value)} style={{ width: '100%', marginTop: '10px' }}>
                         <option value="">Select Main Category</option>
                         {getMaincategories.map((mainCat) => (
                             <option key={mainCat._id} value={mainCat._id}>

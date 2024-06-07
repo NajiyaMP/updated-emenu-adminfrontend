@@ -329,26 +329,25 @@ function Dishes() {
             <Modal.Title>Add jewellery products</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <input
+            <input className=' my-3 input-style'
             style={{ width: "100%" }}
             type="file"
             name="image"
             onChange={(e) => setImage(e.target.files[0])}
-            className="mb-3"
             />
-            <input
+            <input className='input-style'
             placeholder="item-number"
             type="text"
             style={{ width: "100%", marginBottom: '1rem' }}
             onChange={(e) => setItemnumber(e.target.value)}
             />
-            <input
+            <input className='input-style'
             placeholder="products"
             type="text"
             style={{ width: "100%", marginBottom: '1rem' }}
             onChange={(e) => setDishes(e.target.value)}
             />
-            <textarea
+            <textarea className='input-style'
               placeholder="description"
               type="text"
               style={{ width: "100%", marginBottom: '1rem' }}
@@ -357,10 +356,9 @@ function Dishes() {
            
             
 
-        <select
+        <select className=' my-3 input-style'
           onChange={(e) => setMaincategory(e.target.value)}
           value={maincategory}
-          className="my-3"
           style={{ width: "100%", marginBottom: '1rem' }}
           name=""
           id=""
@@ -374,10 +372,9 @@ function Dishes() {
         </select>
 
         {/* Category Dropdown */}
-        <select
+        <select className=' my-3 input-style'
           onChange={(e) => setCategories(e.target.value)}
           value={categories}
-          className="my-3"
           style={{ width: "100%", marginBottom: '1rem' }}
           name=""
           id=""
@@ -389,25 +386,25 @@ function Dishes() {
             </option>
           ))}
         </select>
-            <input
+            <input className='input-style'
             placeholder="Price"
             type="number"
             style={{ width: "100%", marginBottom: '1rem' }}
             onChange={(e) => setPrice(e.target.value)}
             />
-            <input
+            <input className='input-style'
             placeholder="weight"
             type="text"
             style={{ width: "100%", marginBottom: '1rem' }}
             onChange={(e) => setWeight(e.target.value)}
             />
-            <input
+            <input className='input-style'
             placeholder="purity"
             type="text"
             style={{ width: "100%", marginBottom: '1rem' }}
             onChange={(e) => setPurity(e.target.value)}
             />
-            <textarea
+            <textarea className='input-style'
               placeholder="details"
               type="text"
               style={{ width: "100%", marginBottom: '1rem' }}
@@ -433,12 +430,12 @@ function Dishes() {
           <Modal.Title>Edit Products</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <input
+          <input className='input-style'
             style={{ width: "100%", margin: "10px" }}
             type="file"
             onChange={(e) => setFile(e.target.files[0])}
           />
-          <input
+          <input className='input-style'
             value={getDishesById.Itemnumber}
             name="Itemnumber"
             type="text"
@@ -447,7 +444,7 @@ function Dishes() {
             onChange={(e) => handleUpdateChange(e)}
           />
 
-          <input
+          <input className='input-style'
             value={getDishesById.dishes}
             name="dishes"
             type="text"
@@ -456,7 +453,7 @@ function Dishes() {
             onChange={(e) => handleUpdateChange(e)}
           />
 
-          <textarea
+          <textarea className='input-style'
             value={getDishesById.description}
             name="description"
             type="text"
@@ -469,10 +466,9 @@ function Dishes() {
 
 
 
-          <select
+          <select className='my-3 input-style'
             onChange={(e) => setGetCategoriesById(e.target.value)}
             value={getCategoriesById}
-            className="my-3"
             style={{ width: "100%",marginBottom:'1rem' }}
             name=""
             id=""
@@ -485,7 +481,7 @@ function Dishes() {
             ))}
           </select>
 
-          <input
+          <input className='input-style'
             value={getDishesById.price}
             name="price"
             type="number"
@@ -493,7 +489,7 @@ function Dishes() {
             style={{ width: "100%",marginBottom:'1rem' }}
             onChange={(e) => handleUpdateChange(e)}
           />
-           <input
+           <input className='input-style'
             value={getDishesById.weight}
             name="weight"
             type="text"
@@ -501,7 +497,7 @@ function Dishes() {
             style={{ width: "100%",marginBottom:'1rem' }}
             onChange={(e) => handleUpdateChange(e)}
           />
-           <input
+           <input className='input-style'
             value={getDishesById.purity}
             placeholder="purity"
             name="purity"
@@ -509,7 +505,7 @@ function Dishes() {
             style={{ width: "100%",marginBottom:'1rem' }}
             onChange={(e) => handleUpdateChange(e)}
           />
-           <textarea
+           <textarea className='input-style'
             value={getDishesById.details}
             name="details"
             type="text"

@@ -144,7 +144,7 @@ const handleDelete = async(id)=>{
           <Modal.Title>Add  Main Category</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <input type="text" style={{width:'100%'}} onChange={(e)=> setMaincategories(e.target.value)} />
+            <input className='input-style' type="text" style={{width:'100%'}} onChange={(e)=> setMaincategories(e.target.value)} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
